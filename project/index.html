@@ -15,7 +15,23 @@
         h1, h2, h3 {
             color: #36BFBF;
             font-family: "Intel One Mono", monospace;
+            margin-top: 30px;
         }
+
+        h3{
+            margin-left: 50px;
+        }   
+
+        .arpanet-image {
+            float: right;
+            margin-top: -50px;
+            margin-right: 300px;
+        }
+        
+        .about-arpanet {
+            margin-left: 75px;
+        }
+
 
         img {
             border: 2px solid #000000;
@@ -23,6 +39,10 @@
             margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
+        }
+        
+        .ethernet-image, .router-image {
+            list-style-type: none;
         }
 
         figcaption {
@@ -66,38 +86,40 @@
 
     <h3>About ARPANET</h3>
 
-    <p>It stands for the Advanced Research Projects Agency Network. The network went live in 1969, with the first historic message sent (“node-to-node”) on October 29, 1969, from UCLA to the Stanford Research Institute (SRI); although the previous simple message ”LOGIN” failed to send.</p>
+    <span>
+        <figure class="arpanet-image">
+            <img  src="images/arpanet-logical-map.png" alt="ARPANET Logical Map 1973" width="400">
+            <figcaption>ARPANET Logical Map 1973, this image is from <a href="https://picryl.com/media/arpanet-logical-map-march-1977-030c4d" target="_blank">Picryl</a> website</figcaption>
+        </figure>
+    </span>
 
-    <p> The ARPANET was the only connection between four computing devices at the end of the 1960s, but the network then grew steadily during the 1970s.</p> 
+    <p class="about-arpanet">It stands for the Advanced Research Projects Agency Network. The network went live in 1969, with the first historic message sent (“node-to-node”) on October 29, 1969, from UCLA to the Stanford Research Institute (SRI); although the previous simple message ”LOGIN” failed to send.</p>
+
+    <p class="about-arpanet"> The ARPANET was the only connection between four computing devices at the end of the 1960s, but the network then grew steadily during the 1970s.</p> 
     
-    <p>Therefore, in order to solve the problem, by the mid-1970s, a computer scientist named Vinton Cerf had developed  a way for all of the computers on all of the world’s mini-networks to communicate with one another. He called his invention “Transmission Control Protocol,” or TCP.</p>
+    <p class="about-arpanet">Therefore, in order to solve the problem, by the mid-1970s, a computer scientist named Vinton Cerf had developed  a way for all of the computers on all of the world’s mini-networks to communicate with one another. He called his invention “Transmission Control Protocol,” or TCP.</p>
 
-    <p>Later, he added an additional protocol, known as “Internet Protocol.” The acronym we use to refer to these today is TCP/IP. One writer describes Cerf’s protocol as “the ‘handshake’ that introduces distant and different computers to each other in a virtual space.”</p>
+    <p class="about-arpanet">Later, he added an additional protocol, known as “Internet Protocol.” The acronym we use to refer to these today is TCP/IP. One writer describes Cerf’s protocol as “the ‘handshake’ that introduces distant and different computers to each other in a virtual space.”</p>
 
-    <p>As a result, It became the first wide-area packet-switched network with distributed control and one of the first computer networks to implement the TCP/IP protocol suite. Both technologies became the technical foundation of the Internet.</p>
+    <p class="about-arpanet">As a result, It became the first wide-area packet-switched network with distributed control and one of the first computer networks to implement the TCP/IP protocol suite. Both technologies became the technical foundation of the Internet.</p>
 
-    <figure>
-        <img class="arpanet_image" src="images/arpanet-logical-map.png" alt="ARPANET Logical Map 1973" width="600" height="400">
-        <figcaption>ARPANET Logical Map 1973, this image is from <a href="https://picryl.com/media/arpanet-logical-map-march-1977-030c4d" target="_blank">Picryl</a> website</figcaption>
-    </figure>
-    
     <h2>Type of Connection: Wire and Wireless</h2>
 
     <p>In order to connect computing devices together, there are many and special connections between each computing device in the world such as, cable, satellite, cellular, dial-up, Integrated Service Digital Network (ISDN), etc. However, to classify them, they are separated into two specific groups—that is wire and wireless connection. Furthermore, they have different in how long it will take to send and receive the message. In other words, each connection have different <a href="https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:the-internet/xcae6f4a7ff015e7d:connecting-networks/a/bit-rate-bandwidth-and-latency 
 " target="_blank">bandwidth, bit rate, and latency,</a></p>
 
    <ul>
-        <li>The wire connection is the physical link that connects your device—such as a computer, game console, or smart TV—directly to a router, modem, or network switch using a physical cable. For example, you may be familiar with the cable that connects your computer or smart TV to the outlet. They are the wire connection which is called “Ethernet cable”.</li>
-        <li>
+        <li c>The wire connection is the physical link that connects your device—such as a computer, game console, or smart TV—directly to a router, modem, or network switch using a physical cable. For example, you may be familiar with the cable that connects your computer or smart TV to the outlet. They are the wire connection which is called “Ethernet cable”.</li>
+        <li class="ethernet-image">
             <figure>
-                <img class="ethernet_image" src="images/ethernet-cable-image.png" alt="Ethernet Cable" width="600" height="400">
-                <figcaption>Ethernet Cable, this image is from <a href="https://lifehacker.com/how-to-buy-the-right-ethernet-cable-1850955081" target="_blank">Lifehacker </a> website</figcaption>
+                <img src="images/ethernet-cable-image.png" alt="Ethernet Cable" width="600" height="400">
+                <figcaption>Ethernet Cable, this image is from <a href="https://lifehacker.com/how-to-buy-the-right-ethernet-cable-1850955081" target="_blank">Lifehacker</a> website</figcaption>
             </figure>
         </li>
         <li>Then, the wireless connection, which is commonly known as Wifi, is a telecommunications link that transfers information between two or more devices without physical cables. Rather, it uses radio frequency signals to deliver messages, or data, between each computing device. For example, the Wifil home router links your devices to the internet, or Internet Service Provider, via radio waves using a modem and a wireless router. After plugging in the cable, the Wifi starts to emit their radio signals, through the house, helping your phone, smart TVs, and wireless printers communicate with each other without a physical cable.</li>
-        <li>
+        <li class="router-image">
             <figure>
-                <img class="router_image" src="images/wireless-connection-example.jpg" alt="Wireless Connection" width="600" height="400">
+                <img src="images/wireless-connection-example.jpg" alt="Wireless Connection" width="600" height="400">
                 <figcaption>Wireless Connection, this image is from <a href="https://savsystems.com/whole-home-wi-fi-solutions/" target="_blank">SAV Systems</a> website</figcaption>
             </figure>
         </li>
@@ -112,8 +134,8 @@
     <p>On the Internet, there are different protocols for different types of processes. Protocols are often discussed in terms of which OSI model layer they belong to. For instance, there are some common protocols:</p>
    
 
-    <figure>
-        <img class="network_protocols" src="images/protocol-diagram.png" alt="8 Popular Network Protocols" width="400" height="600">
+    <figure class="network-protocols">
+        <img src="images/protocol-diagram.png" alt="8 Popular Network Protocols" width="400" height="600">
         <figcaption>8 Popular Network Protocols, this image is from <a href="https://bytebytego.com/guides/explaining-8-popular-network-protocols-in-1-diagram/" target="_blank">SAV Systems</a> website</figcaption>
     </figure>
     
