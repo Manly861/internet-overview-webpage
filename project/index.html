@@ -22,16 +22,30 @@
             margin-left: 50px;
         }   
 
-        .arpanet-image {
+        .arpanet-image, .network-protocols {
             float: right;
             margin-top: -50px;
             margin-right: 300px;
         }
         
+        .network-protocols {
+            float: right;
+        }
+        .protocols-list {
+            padding: 50px;
+        }
+
         .about-arpanet {
             margin-left: 75px;
         }
 
+        .wire-connect-description, .wireless-connect-description {
+            margin-left: 50px;
+        }
+
+        strong {
+            color: #14D9b5;
+        }
 
         img {
             border: 2px solid #000000;
@@ -41,7 +55,7 @@
             margin-right: auto;
         }
         
-        .ethernet-image, .router-image {
+        .ethernet-image, .router-image, .network-protocols {
             list-style-type: none;
         }
 
@@ -78,7 +92,7 @@
 
     <h2>History of Internet</h2>
 
-    <p>Unlike technologies such as the phonograph or the safety pin, the internet has no single “inventor.” Instead, it has evolved over time. The internet got its start in the United States in the late 1960s as a military defense system in the Cold War. For years, scientists and researchers used it to communicate and share data with one another. Today, we use the internet for almost everything, and for many people it would be impossible to imagine life without it.</p>
+    <p>Unlike technologies such as the phonograph or the safety pin, the internet has no single “inventor”; instead, it has evolved over time. The internet got its start in the United States in the late 1960s as a military defense system in the Cold War. For years, scientists and researchers used it to communicate and share data with one another. Today, we use the internet for almost everything, and for many people it would be impossible to imagine life without it.</p>
 
     <p>During the peak time of the Cold War, Scientists and military experts were especially concerned about what might happen in the event of a Soviet attack on the nation’s telephone system. That is, just one missile could destroy the whole network of lines and wires that made efficient long-distance communication possible.</p>
 
@@ -106,17 +120,17 @@
 " target="_blank">bandwidth, bit rate, and latency,</a></p>
 
    <ul>
-        <li>The wire connection is the physical link that connects your device—such as a computer, game console, or smart TV—directly to a router, modem, or network switch using a physical cable. For example, you may be familiar with the cable that connects your computer or smart TV to the outlet. They are the wire connection which is called “Ethernet cable”.</li>
+        <li class="wire-connect-description"><strong>Wire Connection:</strong> The wire connection is the physical link that connects your device—such as a computer, game console, or smart TV—directly to a router, modem, or network switch using a physical cable. For example, you may be familiar with the cable that connects your computer or smart TV to the outlet. They are the wire connection which is called “Ethernet cable”.</li>
         <li class="ethernet-image">
             <figure>
-                <img src="images/ethernet-cable-image.png" alt="Ethernet Cable" width="600" height="400">
+                <img src="images/ethernet-cable-image.png" alt="Ethernet Cable" width="500">
                 <figcaption>Ethernet Cable, this image is from <a href="https://lifehacker.com/how-to-buy-the-right-ethernet-cable-1850955081" target="_blank">Lifehacker</a> website</figcaption>
             </figure>
         </li>
-        <li>Then, the wireless connection, which is commonly known as Wifi, is a telecommunications link that transfers information between two or more devices without physical cables. Rather, it uses radio frequency signals to deliver messages, or data, between each computing device. For example, the Wifil home router links your devices to the internet, or Internet Service Provider, via radio waves using a modem and a wireless router. After plugging in the cable, the Wifi starts to emit their radio signals, through the house, helping your phone, smart TVs, and wireless printers communicate with each other without a physical cable.</li>
+        <li class="wireless-connect-description"><strong>Wireless Connection:</strong> the wireless connection, which is commonly known as Wifi, is a telecommunications link that transfers information between two or more devices without physical cables. Rather, it uses radio frequency signals to deliver messages, or data, between each computing device. For example, the Wifil home router links your devices to the internet, or Internet Service Provider, via radio waves using a modem and a wireless router. After plugging in the cable, the Wifi starts to emit their radio signals, through the house, helping your phone, smart TVs, and wireless printers communicate with each other without a physical cable.</li>
         <li class="router-image">
             <figure>
-                <img src="images/wireless-connection-example.jpg" alt="Wireless Connection" width="600" height="400">
+                <img src="images/wireless-connection-example.jpg" alt="Wireless Connection" width="500">
                 <figcaption>Wireless Connection, this image is from <a href="https://savsystems.com/whole-home-wi-fi-solutions/" target="_blank">SAV Systems</a> website</figcaption>
             </figure>
         </li>
@@ -129,14 +143,14 @@
     <p>Standardized protocols are like a common language that computers can use, similar to how two people from different parts of the world may not understand each other's native languages, but they can communicate using a shared third language. If one computer uses the Internet Protocol (IP) and a second computer does as well, they will be able to communicate — just as the United Nations relies on its 6 official languages to communicate amongst representatives from all over the globe. But if one computer uses IP and the other does not know this protocol, they will be unable to communicate.</p>
 
     <p>On the Internet, there are different protocols for different types of processes. Protocols are often discussed in terms of which OSI model layer they belong to. For instance, there are some common protocols:</p>
-   
-
-    <figure class="network-protocols">
-        <img src="images/protocol-diagram.png" alt="8 Popular Network Protocols" width="400" height="600">
-        <figcaption>8 Popular Network Protocols, this image is from <a href="https://bytebytego.com/guides/explaining-8-popular-network-protocols-in-1-diagram/" target="_blank">SAV Systems</a> website</figcaption>
-    </figure>
     
-    <ul>
+    <ul class="protocols-list">
+        <li class="network-protocols">
+            <figure>
+                <img src="images/protocol-diagram.png" alt="8 Popular Network Protocols" width="100">
+                <figcaption>8 Popular Network Protocols, this image is from <a href="https://bytebytego.com/guides/explaining-8-popular-network-protocols-in-1-diagram/" target="_blank">SAV Systems</a> website</figcaption>
+            </figure>
+        </li>
         <li>Internet Protocol (IP)</li>
         <li>Hypertext Transfer Protocol (HTTP)</li>
         <li>Transmission Control Protocol (TCP)</li>
